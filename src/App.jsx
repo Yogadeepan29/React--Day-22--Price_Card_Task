@@ -58,19 +58,19 @@ const App = () => {
     },
   ];
 
-  return <>
-    <section className="pricing my-5 py-5">
-      <div className="container">
-        <div className="row">
-          {
-          priceDetails.map((element,index) => {
-            return <Card cardData={element} key={index} />
-          })
-        }
+  return (
+    <>
+      <section className="pricing my-5 py-5">
+        <div className="container">
+          <div className="row">
+            {priceDetails.map((element, index) => {
+              return <Card cardData={element} key={index} />;
+            })}
+          </div>
         </div>
-      </div>
       </section>
     </>
+  );
 };
 
 export default App;
